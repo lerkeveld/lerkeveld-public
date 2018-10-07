@@ -1,0 +1,2 @@
+RedirectMatch 303 ^/calendar/$ "url-for-browser"
+RedirectMatch 303 ^/calendar/public\.ics$ "url-for-ical"
