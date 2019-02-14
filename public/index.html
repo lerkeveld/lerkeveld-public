@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Lerkeveld</title>
+
+    <meta name="author" content="Lerkeveld IT">
+    <meta name="description" content="Parvus Numero, Magnus Merito!">
+    <meta name="keywords" content="Lerkeveld,Praesidium">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="canonical" href="https://shared.simonbos.me">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+    body, html {
+      height: 100%;
+      color: '#9b0000';
+      line-height: 1.8;
+    }
+    
+    /* Parallax images */
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .bgimg-1 {
+      background-image: url('/imgs/lerkeveld.jpg');
+      min-height: 100%;
+    }
+    .bgimg-2 {
+      background-image: url("/imgs/praesidium2018-2019.jpg");
+      min-height: 400px;
+    }
+    .bgimg-3 {
+      background-image: url("/imgs/praeses2018-2019.jpg");
+      min-height: 400px;
+    }
+    
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1600px) {
+      .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+        min-height: 400px;
+      }
+    }
+    
+    /* w3 additions */
+    .w3-wide {letter-spacing: 10px;}
+    .w3-hover-opacity {cursor: pointer;}
+    .w3-bar-avatar {
+        position: relative;
+        padding-left: 72px !important;
+    }
+    .w3-bar-avatar > i {
+        display: block;
+        position: absolute;
+        line-height: 42px;
+        width: 42px;
+        height: 42px;
+        left: 15px;
+        vertical-align: middle;
+        text-align: center;
+    }
+    </style>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+    <link rel="manifest" href="/assets/site.webmanifest">
+    <link rel="mask-icon" href="/assets/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/assets/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/assets/browserconfig.xml">
+  </head>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-card w3-white" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-hover-pale-red">HOME</a>
+
+    <!-- Navbar part hidden for medium screens -->
+    <div class="w3-hide-small w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button w3-hover-pale-yellow"><i class="fa fa-info"></i> OVER LERKEVELD</a>
+      <a href="#praesidium" class="w3-bar-item w3-button w3-hover-pale-yellow"><i class="fa fa-users"></i> PRAESIDIUM</a>
+      <a href="#contact" class="w3-bar-item w3-button w3-hover-pale-yellow"><i class="fa fa-envelope"></i> CONTACT</a>
+      <a href="/underground/" class="w3-bar-item w3-button w3-right w3-hover-pale-red">
+          <i class="fa fa-sign-in"></i> <span class="w3-hide-medium">LERKIES ONLY</span>
+      </a>
+    </div>
+
+    <!-- Menu for medium screens -->
+    <a class="w3-hide-large w3-bar-item w3-button w3-right w3-hover-pale-red" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <!-- Navbar for medium screens -->
+  <div class="w3-hide w3-hide-large w3-bar-block w3-white" id="navDemo">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">OVER LERKEVELD</a>
+    <a href="#praesidium" class="w3-bar-item w3-button" onclick="toggleFunction()">PRAESIDIUM</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="/underground" class="w3-bar-item w3-button">LERKIES ONLY</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">WELKOM OP</span> LERKEVELD</span>
+  </div>
+</div>
+
+<!-- About Section -->
+<div class="w3-content w3-container w3-padding-32" id="about">
+  <div class="w3-row">
+    <div class="w3-col m3 w3-padding">
+    </div>
+    <div class="w3-col m9 w3-padding">
+    <h3>OVER LERKEVELD</h3>
+    <p><em>Waar is het fijn student te zijn?</em></p>
+    </div>
+  </div>
+  <div class="w3-row">
+    <div class="w3-col m3 w3-padding w3-margin-top w3-hide-small w3-center">
+      <img src="/imgs/schild.png" class="w3-image" alt="Schild Lerkeveld Praesidium" style="max-width: 140px;">
+    </div>
+    <div class="w3-col m9 w3-padding">
+      <p>
+Het Lerkeveld praesidium heet u van harte welkom op Lerkeveld Underground. Indien u op deze pagina terecht gekomen bent, bent u waarschijnlijk een ouder, een student, een pater op rust of misschien wel de Heer Vanleeuw himself. Wie u ook bent of wat uw doelstellingen ook mogen zijn, wij vonden het belangrijk dat wij ons duidelijk profileerden naar de grote koude onduidelijke buitenwereld toe.
+      </p>
+      <p>
+Lerkeveld wordt op deze site omschreven als "een huis met een rijke geschiedenis waar vele gemeenschappen banden smeedden". Wij vertegenwoordigen één van die gemeenschappen. voor ons is banden smeedden echter het nuttigen van stella in de kotbar, deelnemen aan de vierentwintigurenloop en als het te rustig wordt die studenten in de tegenovergestelde vleugel eens op hun plaats zetten (in alle vriendelijkheid natuurlijk).
+      </p>
+      <p>
+Lerkeveld Underground is dus de site van, voor en door studenten. Met plezier stellen wij dan ook een dynamische groep praesidiumleden voor die instaan voor het entertainment van de studentikoze Lerkeveldpopulatie:
+      </p>
+      <p>
+      Het Lerkeveld Praesidium heeft ook zijn eigen <b>lied</b>!
+      Een ingezongen versie kan je alvast hier vinden. Voor volledigheid vind je de noten hier. Het belangrijkste, de tekst gaat als volgt:
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Stats Division -->
+<div class="w3-row w3-center w3-pale-yellow w3-padding-16">
+  <div class="w3-col m3 s6">
+    <span class="w3-xlarge">148</span><br>
+    Studenten
+  </div>
+  <div class="w3-col m3 s6">
+    <span class="w3-xlarge">8</span><br>
+    Gangen
+  </div>
+  <div class="w3-col m3 s6">
+    <span class="w3-xlarge">42</span><br>
+    Praesidiumleden
+  </div>
+  <div class="w3-col m3 s6">
+    <span class="w3-xlarge">50+</span><br>
+    Activiteiten
+  </div>
+</div>
+
+<!-- Second Parallax Image with Praesidium -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PRAESIDIUM</span>
+  </div>
+</div>
+
+<!-- Praesidium Section -->
+<div class="w3-content w3-container w3-padding-32" id="praesidium">
+  <h3>HET PRAESIDIUM</h3>
+  
+  <ul class="w3-ul w3-card-4" style="line-height: 24px">
+    <li class="w3-bar w3-bar-avatar">
+      <i class="fa fa-heart w3-circle w3-pink"></i>
+      <div class="w3-bar-item" style="padding: 0px; width: 100%">
+        <div class="w3-large" style="width: 100%">
+          Praeses
+          <a href="mailto:praeses@lerkies.studentenweb.org" title="Email Praeses">
+            <i class="fa fa-envelope w3-right" style="padding-right: 15px"></i>
+          </a>
+        </div>
+        <div class="w3-text-gray">Matthias Defoort</div>
+      </div>
+    </li>
+    <li class="w3-bar w3-bar-avatar">
+      <i class="fa fa-university w3-circle w3-purple"></i>
+      <div class="w3-bar-item" style="padding: 0px; width: 100%">
+        <div class="w3-large" style="width: 100%">
+          Vice-Praeses
+          <a href="mailto:vice@lerkies.studentenweb.org" title="Email Vice-Praeses">
+            <i class="fa fa-envelope w3-right" style="padding-right: 15px"></i>
+          </a>
+        </div>
+        <div class="w3-text-gray">Thomas De Backer</div>
+      </div>
+    </li>
+    <li class="w3-bar w3-bar-avatar">
+      <i class="fa fa-group w3-circle w3-deep-purple"></i>
+      <div class="w3-bar-item" style="padding: 0px; width: 100%">
+        <div class="w3-large" style="width: 100%">
+          STV
+          <a href="mailto:stv@lerkies.studentenweb.org" title="Email STV">
+            <i class="fa fa-envelope w3-right" style="padding-right: 15px"></i>
+          </a>
+        </div>
+        <div class="w3-text-gray">Lucas Verleyen</div>
+      </div>
+    </li>
+    <li class="w3-bar w3-bar-avatar">
+      <i class="fa fa-bolt w3-circle w3-indigo"></i>
+      <div class="w3-bar-item" style="padding: 0px; width: 100%">
+        <div class="w3-large" style="width: 100%">
+          Activiteiten
+          <a href="mailto:activiteiten@lerkies.studentenweb.org" title="Email Activiteiten">
+            <i class="fa fa-envelope w3-right" style="padding-right: 15px"></i>
+          </a>
+        </div>
+        <div class="w3-text-gray">Kristien Fabri, Maarten Van den Bossche</div>
+      </div>
+    </li>
+    <li class="w3-bar w3-bar-avatar">
+      <i class="fa fa-futbol-o w3-circle w3-blue"></i>
+      <div class="w3-bar-item" style="padding: 0px; width: 100%">
+        <div class="w3-large" style="width: 100%">
+          Sport
+          <a href="mailto:sport@lerkies.studentenweb.org" title="Email Sport">
+            <i class="fa fa-envelope w3-right" style="padding-right: 15px"></i>
+          </a>
+        </div>
+        <div class="w3-text-gray">Jonah Mortier, Sofie Vanden Eynden</div>
+      </div>
+    </li>
+    <li class="w3-bar w3-bar-avatar">
+      <i class="fa fa-glass w3-circle w3-teal"></i>
+      <div class="w3-bar-item" style="padding: 0px; width: 100%">
+        <div class="w3-large" style="width: 100%">
+          Kotbar
+          <a href="mailto:kotbar@lerkies.studentenweb.org" title="Email Kotbar">
+            <i class="fa fa-envelope w3-right" style="padding-right: 15px"></i>
+          </a>
+        </div>
+        <div class="w3-text-gray">Nick Decoster</div>
+      </div>
+    </li>
+    <li class="w3-bar w3-bar-avatar">
+      <i class="fa fa-plane w3-circle w3-green"></i>
+      <div class="w3-bar-item" style="padding: 0px; width: 100%">
+        <div class="w3-large" style="width: 100%">
+          Cultuur
+          <a href="mailto:cultuur@lerkies.studentenweb.org" title="Email Cultuur">
+            <i class="fa fa-envelope w3-right" style="padding-right: 15px"></i>
+          </a>
+        </div>
+        <div class="w3-text-gray">Lore D'Anvers</div>
+      </div>
+    </li>
+    <li class="w3-bar w3-bar-avatar">
+      <i class="fa fa-archive w3-circle w3-lime w3-text-white"></i>
+      <div class="w3-bar-item" style="padding: 0px; width: 100%">
+        <div class="w3-large" style="width: 100%">
+          Materiaal
+          <a href="mailto:materiaal@lerkies.studentenweb.org" title="Email Materiaal">
+            <i class="fa fa-envelope w3-right" style="padding-right: 15px"></i>
+          </a>
+        </div>
+        <div class="w3-text-gray">Arthur Van Lint, Elke Van Onsem</div>
+      </div>
+    </li>
+    <li class="w3-bar w3-bar-avatar">
+      <i class="fa fa-coffee w3-circle w3-yellow w3-text-white"></i>
+      <div class="w3-bar-item" style="padding: 0px; width: 100%">
+        <div class="w3-large" style="width: 100%">
+          Brood en Melk
+          <a href="mailto:brood.en.melk@lerkies.studentenweb.org" title="Email Brood en Melk">
+            <i class="fa fa-envelope w3-right" style="padding-right: 15px"></i>
+          </a>
+        </div>
+        <div class="w3-text-gray">Thomas De Backer</div>
+      </div>
+    </li>
+    <li class="w3-bar w3-bar-avatar">
+      <i class="fa fa-wifi w3-circle w3-amber w3-text-white"></i>
+      <div class="w3-bar-item" style="padding: 0px; width: 100%">
+        <div class="w3-large" style="width: 100%">
+          IT
+          <a href="mailto:IT@lerkies.studentenweb.org" title="Email IT">
+            <i class="fa fa-envelope w3-right" style="padding-right: 15px"></i>
+          </a>
+        </div>
+        <div class="w3-text-gray">Simon Bos</div>
+      </div>
+    </li>
+  </ul>
+  <p>
+  Klik <a href="/praesidium.html">hier</a> voor een gedetailleerd overzicht van alle medewerkers en de praesidia van vorige jaren.
+  </p>
+</div>
+
+<!-- Third Parallax Image with Contact Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-content w3-container" style="padding-top: 32px; padding-bottom: 100px;" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m3 w3-padding"></div>
+    <div class="w3-col m9 w3-padding">
+      <h3>CONTACTEER ONS</h3>
+      <p>
+        Ben jij een (toekomstige) student en heb je vragen rond het Lerkeveld Praesidium, aarzel dan niet om ons te contacteren!
+      </p>
+    </div>
+  </div>
+  <div class="w3-row">
+    <div class="w3-col m3 w3-hide-small w3-padding w3-center">
+      <svg viewBox="0 40 250 160" style="max-width: 140px;" aria-label="Grondplan Lerkeveld">
+        <title>Grondplan Lerkeveld</title>
+        <path d="m3.9166 64.206v68.381h23.549v-6.7928h48.909v43.474h-7.247v23.549h77.891v-23.55h-47.098v-49.59h88.76v72.91h50.267v-23.32h-26.95v-49.59h31.021v-24.906h-31.02v-50.72h-32.379v25.586h8.8307v25.36h-48.45v-34.417h-30.79v33.738h-33.063v7.4721h-48.908v-37.578z"/>
+      </svg>
+    </div>
+    <div class="w3-col m9 w3-padding">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+        Waversebaan 220, 3001 Heverlee<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+        info@lerkies.studentenweb.org<br>
+        <i class="fa fa-linkedin-square fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i>
+
+        <a href="https://www.linkedin.com/company/lerkeveld/" target="_blank" rel="noopener noreferrer">Lerkeveld</a>
+        <br>
+      </div>
+    </div>
+  </div>
+  <div class="w3-row">
+    <div class="w3-col m3 w3-padding"></div>
+    <div class="w3-col m9 w3-padding">
+    Voor IT gerelateerde zaken, mag je direct naar it@lerkies.studentenweb.org sturen. We helpen je graag verder.
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-yellow w3-padding-64 w3-opacity">
+  <a href="#home" class="w3-button w3-hover-pale-yellow">
+    <i class="fa fa-arrow-up w3-margin-right"></i>
+    To the top
+  </a>
+  <p>Powered by Lerkeveld IT</p>
+</footer>
+ 
+<script type="text/javascript">
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+    return false;
+}
+</script>
+</body>
+</html>

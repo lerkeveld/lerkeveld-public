@@ -1,2 +1,2 @@
-RedirectMatch 303 ^/calendar/$ "url-for-browser"
-RedirectMatch 303 ^/calendar/public\.ics$ "url-for-ical"
+RedirectMatch 303 ^/calendar/$ "https://calendar.google.com/calendar/embed?src=6g8uqfklv1mcq1usae74hcpnn8@group.calendar.google.com\&ctz=Europe/Brussels"
+RedirectMatch 303 ^/calendar/public\.ics$ "https://calendar.google.com/calendar/ical/6g8uqfklv1mcq1usae74hcpnn8@group.calendar.google.com/public/basic.ics"
