@@ -46,7 +46,7 @@
     }
     
     /* Turn off parallax scrolling for tablets and phones */
-    @media only screen and (max-device-width: 1600px) {
+    @media only screen and (max-device-width: 960px) {
       .bgimg-1, .bgimg-2, .bgimg-3 {
         background-attachment: scroll;
         min-height: 400px;
@@ -84,8 +84,8 @@
 <body>
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-card w3-white" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-hover-pale-red">HOME</a>
+  <div class="w3-bar w3-card w3-white">
+    <a href="#home" class="w3-bar-item w3-button w3-hover-pale-red" onClick="closeMenu()">HOME</a>
 
     <!-- Navbar part hidden for medium screens -->
     <div class="w3-hide-small w3-hide-medium">
@@ -98,17 +98,17 @@
     </div>
 
     <!-- Menu for medium screens -->
-    <a class="w3-hide-large w3-bar-item w3-button w3-right w3-hover-pale-red" onclick="toggleFunction()" title="Toggle Navigation Menu">
+    <a class="w3-hide-large w3-bar-item w3-button w3-right w3-hover-pale-red" onClick="toggleMenu()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
   </div>
 
   <!-- Navbar for medium screens -->
-  <div class="w3-hide w3-hide-large w3-bar-block w3-white" id="navDemo">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">OVER LERKEVELD</a>
-    <a href="#praesidium" class="w3-bar-item w3-button" onclick="toggleFunction()">PRAESIDIUM</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <a href="/underground" class="w3-bar-item w3-button">LERKIES ONLY</a>
+  <div class="w3-hide w3-hide-large w3-bar-block w3-white" id="navbar-small">
+    <a href="#about" class="w3-bar-item w3-button" onClick="closeMenu()">OVER LERKEVELD</a>
+    <a href="#praesidium" class="w3-bar-item w3-button" onClick="closeMenu()">PRAESIDIUM</a>
+    <a href="#contact" class="w3-bar-item w3-button" onClick="closeMenu()">CONTACT</a>
+    <a href="/underground/" class="w3-bar-item w3-button" onClick="closeMenu()">LERKIES ONLY</a>
   </div>
 </div>
 
@@ -364,14 +364,20 @@
 </footer>
  
 <script type="text/javascript">
-// Used to toggle the menu on small screens when clicking on the menu button
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
+// Used to toggle the menu on small screens
+function toggleMenu() {
+    var x = document.getElementById("navbar-small");
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
     } else {
         x.className = x.className.replace(" w3-show", "");
     }
+    return false;
+}
+// Used to close the menu on small screens
+function closeMenu() {
+    var x = document.getElementById("navbar-small");
+    x.className = x.className.replace(" w3-show", "");
     return false;
 }
 </script>
