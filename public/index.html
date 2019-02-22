@@ -124,7 +124,7 @@
   <div class="w3-display-middle" style="white-space:nowrap;">
     <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">WELKOM OP</span> LERKEVELD</span>
   </div>
-  <div class="w3-display-bottommiddle w3-hide-small" style="white-space:nowrap; margin-bottom: 24px">
+  <div id="arrow" class="w3-display-bottommiddle w3-hide-small" style="white-space:nowrap; margin-bottom: 24px">
     <span class="w3-center w3-padding-large w3-black w3-large w3-animate-opacity">↓</span>
   </div>
 </div>
@@ -376,7 +376,7 @@
 <script type="text/javascript">
 // Used to toggle the menu on small screens
 function toggleMenu() {
-    var x = document.getElementById("navbar-small");
+    let x = document.getElementById("navbar-small");
     if (x.className.indexOf("w3-show") == -1) {
         x.className += " w3-show";
     } else {
@@ -386,9 +386,21 @@ function toggleMenu() {
 }
 // Used to close the menu on small screens
 function closeMenu() {
-    var x = document.getElementById("navbar-small");
+    let x = document.getElementById("navbar-small");
     x.className = x.className.replace(" w3-show", "");
     return false;
+}
+
+// Hide arrow on scroll
+const arrow = document.getElementById("arrow");
+window.onscroll = function() {
+    // Chrome, Firefox, IE and Opera
+    let x = document.documentElement.scrollTop;
+    // Safari
+    if (x == 0) {
+        x = document.body.scrollTop;
+    }
+    arrow.style.opacity = 1 - x /  250;
 }
 </script>
 </body>
