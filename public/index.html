@@ -22,7 +22,7 @@
       color: '#9b0000';
       line-height: 1.8;
     }
-    
+
     /* Parallax images */
     .bgimg-1, .bgimg-2, .bgimg-3 {
       background-attachment: fixed;
@@ -42,7 +42,7 @@
       background-image: url("/imgs/praeses2018-2019.jpg");
       min-height: 400px;
     }
-    
+
     /* Turn off parallax scrolling for tablets and phones */
     @media only screen and (max-device-width: 960px) {
       .bgimg-1, .bgimg-2, .bgimg-3 {
@@ -50,7 +50,7 @@
         min-height: 400px;
       }
     }
-    
+
     /* w3 additions */
     .w3-wide {letter-spacing: 10px;}
     .w3-hover-opacity {cursor: pointer;}
@@ -67,6 +67,23 @@
         left: 15px;
         vertical-align: middle;
         text-align: center;
+    }
+
+    /* https://www.w3schools.com/howto/howto_css_responsive_iframes.asp */
+    .container-responsive-iframe {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    }
+    .responsive-iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
     }
     </style>
     <link rel="canonical" href="http://lerkies.studentenweb.org/index.html">
@@ -156,6 +173,9 @@
       <p>
         Verder vindt u op deze website i) de dynamische groep praesidiumleden die instaan voor het entertainment van de Lerkies ii) onze contactinformatie en iii) een <a href="/underground/">applicatie</a> specifiek voor de noden van Lerkies.
       </p>
+      <div class="container-responsive-iframe">
+        <iframe class="responsive-iframe" src="https://www.youtube-nocookie.com/embed/y03kuaSzCSg" frameborder="0" allowfullscreen></iframe>
+      </div>
     </div>
   </div>
 </div>
@@ -190,7 +210,7 @@
 <!-- Praesidium Section -->
 <div class="w3-content w3-container w3-padding-32" id="praesidium">
   <h3>HET PRAESIDIUM</h3>
-  
+
   <ul class="w3-ul w3-card-4" style="line-height: 24px">
     <li class="w3-bar w3-bar-avatar">
       <i class="fa fa-heart w3-circle w3-pink"></i>
@@ -375,7 +395,7 @@
   </a>
   <p>Powered by Lerkeveld IT</p>
 </footer>
- 
+
 <script type="text/javascript">
 // Used to toggle the menu on small screens
 function toggleMenu() {
